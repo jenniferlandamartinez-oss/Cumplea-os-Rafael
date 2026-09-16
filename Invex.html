@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Para Rafael 🇲🇽❤️</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+
+      min-height: 100vh;
+
+      font-family: "Segoe UI", Arial, sans-serif;
+
+      color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      overflow: hidden;
+
+      position: relative;
+
+      background:
+        radial-gradient(
+          circle at 50% 40%,
+          #174d32 0%,
+          #08291b 35%,
+          #07100c 70%,
+          #020403 100%
+        );
+
+    }
+
+
+    /* ==========================================
+       ESTRELLAS
+    ========================================== */
+
+    .star {
+
+      position: absolute;
+
+      color: #fff8c7;
+
+      font-size: 14px;
+
+      animation:
+        brillar 2s infinite alternate;
+
+      opacity: .7;
+
+    }
+
+    @keyframes brillar {
+
+      from {
+        opacity: .2;
+        transform: scale(.7);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1.3);
+      }
+
+    }
+
+
+    /* ==========================================
+       PAPEL PICADO
+    ========================================== */
+
+    .papel {
+
+      position: absolute;
+
+      top: 0;
+
+      width: 100%;
+
+      height: 80px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 5px;
+
+      z-index: 2;
+
+    }
+
+
+    .banderita {
+
+      width: 65px;
+
+      height: 65px;
+
+      clip-path:
+        polygon(
+          0 0,
+          100% 0,
+          90% 100%,
+          50% 85%,
+          10% 100%
+        );
+
+      animation:
+        moverBandera 3s ease-in-out infinite;
+
+    }
+
+
+    .banderita:nth-child(1),
+    .banderita:nth-child(4),
+    .banderita:nth-child(7) {
+      background: #e63946;
+    }
+
+    .banderita:nth-child(2),
+    .banderita:nth-child(5),
+    .banderita:nth-child(8) {
+      background: #f5f5f5;
+    }
+
+    .banderita:nth-child(3),
+    .banderita:nth-child(6),
+    .banderita:nth-child(9) {
+      background: #159447;
+    }
+
+
+    @keyframes moverBandera {
+
+      0%,100% {
+        transform: rotate(-2deg);
+      }
+
+      50% {
+        transform: rotate(2deg);
+      }
+
+    }
+
+
+    /* ==========================================
+       LUCES
+    ========================================== */
+
+    .luces {
+
+      position: absolute;
+
+      top: 70px;
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: space-around;
+
+      z-index: 1;
+
+    }
+
+
+    .luz {
+
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+
+      background: #fff4a3;
+
+      box-shadow:
+        0 0 10px #fff4a3,
+        0 0 20px #fff4a3;
+
+      animation:
+        parpadear 1.5s infinite alternate;
+
+    }
+
+
+    @keyframes parpadear {
+
+      from {
+        opacity: .3;
+      }
+
+      to {
+        opacity: 1;
+      }
+
+    }
+
+
+    /* ==========================================
+       CACTUS
+    ========================================== */
+
+    .cactus {
+
+      position: absolute;
+
+      bottom: 0;
+
+      right: 3%;
+
+      font-size: 130px;
+
+      opacity: .45;
+
+      filter:
+        drop-shadow(0 0 10px #1fa85b);
+
+    }
+
+
+    .cactus2 {
+
+      position: absolute;
+
+      bottom: -10px;
+
+      left: 2%;
+
+      font-size: 110px;
+
+      opacity: .35;
+
+    }
+
+
+    /* ==========================================
+       TARJETA
+    ========================================== */
+
+    .card {
+
+      position: relative;
+
+      z-index: 10;
+
+      width: 92%;
+
+      max-width: 600px;
+
+      max-height: 88vh;
+
+      overflow-y: auto;
+
+      padding: 35px 28px;
+
+      text-align: center;
+
+      background:
+        rgba(3, 15, 9, .80);
+
+      border-radius: 28px;
+
+      border:
+        3px solid #e63946;
+
+      box-shadow:
+
+        0 0 15px rgba(230,57,70,.6),
+
+        0 0 30px rgba(21,148,71,.5),
+
+        inset 0 0 25px rgba(255,255,255,.04);
+
+      backdrop-filter:
+        blur(4px);
+
+      animation:
+        aparecer 1.5s ease;
+
+    }
+
+
+    @keyframes aparecer {
+
+      from {
+
+        opacity: 0;
+
+        transform:
+          scale(.7)
+          translateY(50px);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform:
+          scale(1)
+          translateY(0);
+
+      }
+
+    }
+
+
+    /* ==========================================
+       SOMBRERO
+    ========================================== */
+
+    .sombrero {
+
+      font-size: 75px;
+
+      animation:
+        flotarSombrero 2.5s ease-in-out infinite;
+
+      filter:
+        drop-shadow(0 0 10px #e63946);
+
+    }
+
+
+    @keyframes flotarSombrero {
+
+      0%,100% {
+        transform: translateY(0) rotate(-3deg);
+      }
+
+      50% {
+        transform: translateY(-10px) rotate(3deg);
+      }
+
+    }
+
+
+    /* ==========================================
+       TITULO
+    ========================================== */
+
+    h1 {
+
+      font-size:
+        clamp(35px, 9vw, 55px);
+
+      color: #f4f4f4;
+
+      text-shadow:
+
+        3px 3px 0 #159447,
+
+        5px 5px 0 #e63946,
+
+        0 0 15px rgba(255,255,255,.5);
+
+      margin-top: 8px;
+
+    }
+
+
+    .nombre {
+
+      font-size: 40px;
+
+      font-weight: bold;
+
+      color: #e63946;
+
+      text-shadow:
+        0 0 10px #e63946;
+
+      margin: 5px 0 15px;
+
+    }
+
+
+    .linea {
+
+      width: 85%;
+
+      height: 3px;
+
+      margin: 12px auto;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          #159447,
+          white,
+          #e63946,
+          transparent
+        );
+
+    }
+
+
+    /* ==========================================
+       FRASE DE NOCHE
+    ========================================== */
+
+    .noche {
+
+      color: #fff1a8;
+
+      font-size: 17px;
+
+      font-style: italic;
+
+      margin-bottom: 20px;
+
+      text-shadow:
+        0 0 8px #a98b00;
+
+    }
+
+
+    /* ==========================================
+       MENSAJE
+    ========================================== */
+
+    .message {
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+      color: #f3f3f3;
+
+    }
+
+
+    .message p {
+
+      margin-bottom: 18px;
+
+    }
+
+
+    .verde {
+
+      color: #43d17b;
+
+      font-weight: bold;
+
+    }
+
+
+    .rojo {
+
+      color: #ff5262;
+
+      font-weight: bold;
+
+    }
+
+
+    .blanco {
+
+      color: white;
+
+      font-weight: bold;
+
+    }
+
+
+    /* ==========================================
+       CORAZÓN
+    ========================================== */
+
+    .corazon {
+
+      font-size: 50px;
+
+      margin: 10px;
+
+      animation:
+        latido 1.2s infinite;
+
+    }
+
+
+    @keyframes latido {
+
+      0%,100% {
+        transform: scale(1);
+      }
+
+      20% {
+        transform: scale(1.25);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+
+      60% {
+        transform: scale(1.15);
+      }
+
+    }
+
+
+    /* ==========================================
+       BOTÓN
+    ========================================== */
+
+    button {
+
+      margin-top: 12px;
+
+      padding: 15px 28px;
+
+      border-radius: 35px;
+
+      border:
+        2px solid white;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e63946,
+          #159447
+        );
+
+      color: white;
+
+      font-size: 17px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow:
+
+        0 0 12px #e63946,
+
+        0 0 20px #159447;
+
+      transition: .3s;
+
+    }
+
+
+    button:hover {
+
+      transform:
+        scale(1.08);
+
+      box-shadow:
+        0 0 20px white,
+        0 0 35px #e63946;
+
+    }
+
+
+    /* ==========================================
+       SORPRESA
+    ========================================== */
+
+    #sorpresa {
+
+      display: none;
+
+      margin-top: 25px;
+
+      padding: 23px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(230,57,70,.20),
+          rgba(21,148,71,.20)
+        );
+
+      border:
+        1px solid
+        rgba(255,255,255,.4);
+
+      animation:
+        sorpresa 1s ease;
+
+    }
+
+
+    @keyframes sorpresa {
+
+      from {
+
+        opacity: 0;
+
+        transform:
+          translateY(25px)
+          scale(.9);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform:
+          translateY(0)
+          scale(1);
+
+      }
+
+    }
+
+
+    #sorpresa h2 {
+
+      color: #ff5262;
+
+      margin-bottom: 15px;
+
+      text-shadow:
+        0 0 10px #e63946;
+
+    }
+
+
+    #sorpresa p {
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+    }
+
+
+    /* ==========================================
+       FIRMA
+    ========================================== */
+
+    .firma {
+
+      margin-top: 25px;
+
+      color: #bbb;
+
+      font-style: italic;
+
+    }
+
+
+    .firma strong {
+
+      color: #43d17b;
+
+      font-size: 18px;
+
+    }
+
+
+    /* ==========================================
+       CORAZONES FLOTANDO
+    ========================================== */
+
+    .floating {
+
+      position: absolute;
+
+      bottom: -40px;
+
+      font-size: 25px;
+
+      animation:
+        subir 7s linear infinite;
+
+      opacity: .7;
+
+    }
+
+
+    @keyframes subir {
+
+      0% {
+
+        transform:
+          translateY(0)
+          rotate(0deg);
+
+        opacity: 0;
+
+      }
+
+      20% {
+        opacity: .8;
+      }
+
+      100% {
+
+        transform:
+          translateY(-110vh)
+          rotate(360deg);
+
+        opacity: 0;
+
+      }
+
+    }
+
+
+    @media(max-width:600px) {
+
+      .card {
+
+        padding:
+          28px 20px;
+
+      }
+
+      .sombrero {
+
+        font-size: 60px;
+
+      }
+
+      .message {
+
+        font-size: 16px;
+
+      }
+
+      .nombre {
+
+        font-size: 34px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- PAPEL PICADO -->
+
+  <div class="papel">
+
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+    <div class="banderita"></div>
+
+  </div>
+
+
+  <!-- LUCES -->
+
+  <div class="luces">
+
+    <div class="luz"></div>
+    <div class="luz"></div>
+    <div class="luz"></div>
+    <div class="luz"></div>
+    <div class="luz"></div>
+    <div class="luz"></div>
+    <div class="luz"></div>
+
+  </div>
+
+
+  <!-- ESTRELLAS -->
+
+  <div class="star" style="top:15%;left:10%;">✦</div>
+  <div class="star" style="top:25%;left:85%;">✦</div>
+  <div class="star" style="top:45%;left:5%;">✧</div>
+  <div class="star" style="top:12%;left:70%;">✦</div>
+  <div class="star" style="top:65%;left:90%;">✧</div>
+  <div class="star" style="top:70%;left:12%;">✦</div>
+
+
+  <!-- CACTUS -->
+
+  <div class="cactus">
+    🌵
+  </div>
+
+  <div class="cactus2">
+    🌵
+  </div>
+
+
+  <!-- CORAZONES -->
+
+  <div class="floating"
+       style="left:8%;animation-delay:1s;">
+    ❤️
+  </div>
+
+  <div class="floating"
+       style="left:22%;animation-delay:4s;">
+    💚
+  </div>
+
+  <div class="floating"
+       style="left:78%;animation-delay:2s;">
+    ❤️
+  </div>
+
+  <div class="floating"
+       style="left:92%;animation-delay:5s;">
+    🤍
+  </div>
+
+
+  <!-- ==========================================
+       TARJETA
+  ========================================== -->
+
+  <div class="card">
+
+
+    <div class="sombrero">
+      🤠
+    </div>
+
+
+    <div class="linea"></div>
+
+
+    <h1>
+      ¡FELIZ CUMPLEAÑOS!
+    </h1>
+
+
+    <div class="nombre">
+      Rafael ❤️
+    </div>
+
+
+    <div class="linea"></div>
+
+
+    <div class="noche">
+
+      🌙 Antes de que termine tu cumpleaños... ✨
+
+    </div>
+
+
+    <!-- MENSAJE -->
+
+    <div class="message">
+
+
+      <p>
+
+        No quería dejar que terminara tu día
+        sin felicitarte como se debe,
+        porque aunque ya sea de noche,
+        todavía quería aprovechar
+        para recordarte lo especial que eres.
+
+      </p>
+
+
+      <p>
+
+        <span class="verde">
+          Rafael, eres una persona increíble,
+        </span>
+
+        y me siento muy afortunada
+        de poder llamarte
+        <span class="rojo">
+          MI MEJOR AMIGO.
+        </span>
+
+      </p>
+
+
+      <div class="corazon">
+        ❤️
+      </div>
+
+
+      <p>
+
+        Gracias por todas las risas,
+        por las pláticas,
+        (que muchas veces hacen falta),
+        por los momentos buenos,
+        por las tonterías que hacemos
+        y por estar ahí.
+
+      </p>
+
+
+      <p>
+
+        Espero que este nuevo año de vida
+        venga lleno de cosas bonitas para ti:
+        muchos momentos felices,
+        nuevos sueños,
+        nuevas experiencias
+        y muchísimas razones para sonreír.
+
+      </p>
+
+
+      <p>
+
+        Porque te mereces que la vida
+        te sorprenda de la mejor manera
+        y que nunca te falten personas
+        que te quieran de verdad.
+
+      </p>
+
+
+      <p>
+
+        Y sí...
+        <span class="rojo">
+          ya es algo tarde pero tu cumpleaños aun no acaba,
+        </span>
+
+        y necesitaba recordarte algo:
+
+      </p>
+
+
+    </div>
+
+
+    <!-- BOTÓN -->
+
+    <button onclick="mostrarSorpresa()">
+
+      🇲🇽 abrelo  ❤️
+
+    </button>
+
+
+    <!-- SORPRESA -->
+
+    <div id="sorpresa">
+
+
+      <h2>
+        Para mi mejor amigo 🥹❤️
+      </h2>
+
+
+      <p>
+
+        Gracias por formar parte de mi vida.
+
+        Puede que no siempre te lo diga,
+        pero te quiero muchísimo
+        y valoro demasiado nuestra amistad.
+
+      </p>
+
+
+      <br>
+
+
+      <p>
+
+        Deseo que todos esos sueños
+        que tienes algún día
+        se conviertan en realidad.
+
+      </p>
+
+
+      <br>
+
+
+      <p>
+
+        Que nunca pierdas esa forma de ser
+        que te hace ser tú,
+        que sigas riéndote,
+        disfrutando,
+        haciendo locuras
+        y creando recuerdos increíbles.
+
+      </p>
+
+
+      <br>
+
+
+      <p>
+
+        Y si algún día necesitas
+        a alguien para celebrar,
+        para reír,
+        para desahogarte
+        o simplemente para hacer alguna
+        tontería...
+
+        <span class="verde">
+          aquí voy a estar.
+        </span>
+
+      </p>
+
+
+      <br>
+
+
+      <p>
+
+        <strong>
+          Feliz cumpleaños, Rafael.
+        </strong>
+
+      </p>
+
+
+      <br>
+
+
+      <p>
+
+        🇲🇽❤️
+        <br>
+        ¡Que viva México y que viva nuestra amistad!
+        🎉
+
+      </p>
+
+
+    </div>
+
+
+    <!-- FIRMA -->
+
+    <div class="firma">
+
+      Hecho especialmente para ti por
+
+      <br><br>
+
+      <strong>
+        Jennifer ❤️
+      </strong>
+
+    </div>
+
+
+  </div>
+
+
+  <script>
+
+
+    function mostrarSorpresa() {
+
+      const sorpresa =
+        document.getElementById("sorpresa");
+
+      sorpresa.style.display =
+        "block";
+
+
+      /* LLUVIA DE CORAZONES */
+
+      for(let i = 0; i < 40; i++) {
+
+        const corazon =
+          document.createElement("div");
+
+
+        const emojis = [
+          "❤️",
+          "💚",
+          "🤍",
+          "🇲🇽",
+          "🎉"
+        ];
+
+
+        corazon.innerHTML =
+          emojis[
+            Math.floor(
+              Math.random() * emojis.length
+            )
+          ];
+
+
+        corazon.style.position =
+          "fixed";
+
+
+        corazon.style.left =
+          Math.random() * 100 + "vw";
+
+
+        corazon.style.bottom =
+          "-40px";
+
+
+        corazon.style.fontSize =
+          (15 + Math.random() * 30) + "px";
+
+
+        corazon.style.zIndex =
+          "100";
+
+
+        corazon.style.animation =
+          "subir " +
+          (3 + Math.random() * 4) +
+          "s linear forwards";
+
+
+        document.body.appendChild(
+          corazon
+        );
+
+
+        setTimeout(() => {
+
+          corazon.remove();
+
+        }, 7000);
+
+      }
+
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
